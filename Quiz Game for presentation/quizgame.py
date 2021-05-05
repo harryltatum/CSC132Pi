@@ -105,28 +105,28 @@ class MainGUI(Frame, Question):
         os.chdir(os.path.dirname(os.path.abspath(__file__)))
         path = os.getcwd()
         #Button A
-        img = PhotoImage(file=r"{}/ButtonA.png".format(path))
+        img = PhotoImage(file=r"{}\ButtonA.png".format(path))
         button = Button(self, bg="white", image=img, borderwidth=0,\
         highlightthickness=0, activebackground="white",\
         command=lambda: self.process("A"))
         button.image = img
         button.grid(row=1, column=0, sticky=N+S+E+W)
         #ButtonB
-        img = PhotoImage(file=r"{}/ButtonB.png".format(path))
+        img = PhotoImage(file=r"{}\ButtonB.png".format(path))
         button = Button(self, bg="white", image=img, borderwidth=0,\
         highlightthickness=0, activebackground="white",\
         command=lambda: self.process("B"))
         button.image = img
         button.grid(row=1, column=1, sticky=N+S+E+W)
         #ButtonC
-        img = PhotoImage(file=r"{}/ButtonC.png".format(path))
+        img = PhotoImage(file=r"{}\ButtonC.png".format(path))
         button = Button(self, bg="white", image=img, borderwidth=0,\
         highlightthickness=0, activebackground="white",\
         command=lambda: self.process("C"))
         button.image = img
         button.grid(row=1, column=2, sticky=N+S+E+W)
         #ButtonD
-        img = PhotoImage(file=r"{}/ButtonD.png".format(path))
+        img = PhotoImage(file=r"{}\ButtonD.png".format(path))
         button = Button(self, bg="white", image=img, borderwidth=0,\
         highlightthickness=0, activebackground="white",\
         command=lambda: self.process("D"))
