@@ -6,6 +6,7 @@
 #imports
 from tkinter import *
 import random
+import pygame
 
 #################################################################
 # Questions class                                               #
@@ -87,6 +88,14 @@ class Game(Frame):
     #Questions will be stored in a list
     #each list of questions will have an associated subject/difficulty
     #with the exception of math which will have RNG questions
+    
+    def setupPygame(self):
+        pygame.init()
+        pygame.mixer.music.load("4-MAT_mm-complete")
+        pygame.mixer.music.play(loops=-1)
+        
+        # this be the music, yar
+        
 
 ################
 # Testing Code #       
